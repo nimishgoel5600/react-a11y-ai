@@ -10,6 +10,7 @@ let diagnosticCollection: vscode.DiagnosticCollection;
 // Called when your extension is activated
 export function activate(context: vscode.ExtensionContext) {
   // Initialize the DiagnosticCollection
+  console.log("called");
   diagnosticCollection = vscode.languages.createDiagnosticCollection('react-a11y-ai');
   context.subscriptions.push(diagnosticCollection);
 
